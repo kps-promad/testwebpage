@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirecting to Support</title>
+</head>
+<body>
+    <script>
+        // Attempt to open the custom protocol
+        window.location.href = 'ms-contact-support://settings/AudioTroubleshooter';
+
+        // Fallback: After 1 second, redirect to a standard HTTP page if the protocol fails
+        //setTimeout(function() {
+        //    window.location.href = 'https://yourwebsite.com/fallback-help';
+        //}, 1000);
+    </script>
+    <p>Attempting to open the support app. If nothing happens, <a href="https://yourwebsite.com/fallback-help">click here</a>.</p>
+</body>
+</html>
